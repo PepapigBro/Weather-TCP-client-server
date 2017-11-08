@@ -1,0 +1,34 @@
+
+-----------------Start Service-----------------------
+1. open command promt (admin)
+2. write command "cd c:\Windows\Microsoft.net\framework\v4.0.30319"
+
+for install serive
+3. write command "installUtil.exe PATH TO WEATHERSERVICE.EXE", for example
+"installUtil.exe D:Weather\Service\WeatherService.exe"
+
+for uninstall service
+4. write command "installUtil.exe/u PATH TO WEATHERSERVICE.EXE", for example
+"installUtil.exe/u D:Weather\Service\WeatherService.exe"
+
+then it need to start
+
+for start service
+1. Window + r
+2. write "services.msc"
+3. Find "WeatherService" at list and click Start
+
+for stop service
+1. Window + r
+2. write "services.msc"
+3. Find "WeatherService" at list and click Stop
+
+NOte:
+SQlite DB  must be in a WeatherService.exe directory
+
+
+
+-------------------Start Client---------------------------------------------------
+
+for start CLient
+WpfClient/WeatherClient.exe
